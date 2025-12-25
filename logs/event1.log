@@ -1,0 +1,21 @@
+Timestamp	Level	Component	Message
+2025-05-07 10:00:00	INFO	UserAuth	User 'john.doe' logged in successfully.
+2025-05-07 10:00:10	INFO	UserAuth	User 'alice.smith' logged in successfully.
+2025-05-07 10:00:15	WARNING	GeoIP	Could not resolve IP address '192.168.1.100'.
+2025-05-07 10:00:20	ERROR	Payment	Transaction failed for user 'jane.doe'.
+2025-05-07 10:00:30	INFO	UserAuth	User 'john.doe' performed password update.
+2025-05-07 10:00:45	WARNING	GeoIP	Could not resolve IP address '10.0.0.45'.
+2025-05-07 10:01:00	INFO	UserAuth	User 'mark.wilson' logged in successfully.
+2025-05-07 10:01:15	ERROR	Payment	Transaction failed for user 'mark.wilson'.
+2025-05-07 10:01:30	INFO	UserAuth	User 'alice.smith' logged out.
+2025-05-07 10:01:45	WARNING	GeoIP	Could not resolve IP address '172.16.0.8'.
+2025-05-07 10:02:00	INFO	UserAuth	User 'jane.doe' logged in successfully.
+2025-05-07 10:02:10	ERROR	Payment	Transaction failed for user 'john.doe'.
+2025-05-07 10:02:25	INFO	UserAuth	User 'jane.doe' logged out.
+2025-05-07 10:02:40	WARNING	GeoIP	Could not resolve IP address '192.168.0.22'.
+2025-05-07 10:03:00	INFO	UserAuth	User 'alice.smith' logged in successfully.
+2025-05-07 10:03:15	ERROR	Payment	Transaction failed for user 'alice.smith'.
+2025-05-07 10:03:30	INFO	UserAuth	User 'mark.wilson' logged out.
+2025-05-07 10:03:45	WARNING	GeoIP	Could not resolve IP address '10.1.1.12'.
+2025-05-07 10:04:00	INFO	UserAuth	User 'john.doe' logged out.
+2025-05-07 10:04:15	ERROR	Payment	Transaction failed for user 'jane.doe'.
