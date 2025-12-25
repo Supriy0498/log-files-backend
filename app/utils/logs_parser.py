@@ -3,14 +3,15 @@ import uuid
 from datetime import datetime
 
 from schemas.log import Log
+from type_defs.logs import LogDict
 
-def parse_logs(directory: str):
+def parse_logs(directory: str) -> LogDict:
     print("Parsing logs from directory", directory)
     if not os.path.exists(directory):
         print("Directory does not exist")
-        return []
+        return dict()
     
-    logs = []
+    logs = dict()
     for file_name in os.listdir(directory):
         if file_name.endswith(".log"):
             print("Reading log file named", file_name)
@@ -26,6 +27,6 @@ def parse_logs(directory: str):
                     timestamp = datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S")
                     log_id = str(uuid.uuid4())[:16]
                     log = Log(id=log_id, timestamp=timestamp, level=level, component=component, message=message)
-                    logs.append(log)
+                    logs[log_id] = log
 
     return logs
